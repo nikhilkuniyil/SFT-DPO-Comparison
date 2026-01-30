@@ -42,7 +42,7 @@ echo ""
 echo "======================================================================"
 echo "Step 2/7: Preprocessing Data"
 echo "======================================================================"
-python3 scripts/02_preprocess_data.py
+python3 scripts/preprocess_data.py
 if [ $? -ne 0 ]; then
     echo "Error preprocessing data. Exiting."
     exit 1
