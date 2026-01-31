@@ -106,7 +106,6 @@ def main():
         ref_model=ref_model,
         args=dpo_config,
         train_dataset=dataset,
-        tokenizer=tokenizer,
         beta=0.1
     )
     
