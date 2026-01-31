@@ -11,7 +11,7 @@ from transformers import (
     Trainer,
     DataCollatorForLanguageModeling
 )
-from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from peft import LoraConfig, get_peft_model
 from datasets import load_from_disk
 import wandb
 import os
@@ -77,7 +77,6 @@ def main():
     )
     
     # Apply LoRA to model
-    model = prepare_model_for_kbit_training(model)
     model = get_peft_model(model, lora_config)
     
     # Print trainable parameters
