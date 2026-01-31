@@ -105,8 +105,7 @@ def main():
         model=model,
         ref_model=ref_model,
         args=dpo_config,
-        train_dataset=dataset,
-        beta=0.1
+        train_dataset=dataset
     )
     
     print("=" * 70)
