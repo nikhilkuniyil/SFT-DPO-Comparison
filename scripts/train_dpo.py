@@ -67,7 +67,7 @@ def main():
     
     # Load DPO dataset
     print("Loading DPO dataset...")
-    dataset = load_from_disk("data/dpo_data")
+    dataset = load_from_disk("data/processed/dpo_data")
     print(f"✓ Loaded {len(dataset):,} preference pairs\n")
     
     # Show example
