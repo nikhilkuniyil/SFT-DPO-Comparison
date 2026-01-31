@@ -88,7 +88,7 @@ def main():
     
     # Load dataset
     print("Loading SFT dataset...")
-    dataset = load_from_disk("data/sft_data")
+    dataset = load_from_disk("data/processed/sft_data")
     print(f"✓ Loaded {len(dataset):,} training examples\n")
     
     # Tokenize dataset
